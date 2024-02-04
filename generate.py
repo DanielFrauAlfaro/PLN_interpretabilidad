@@ -105,8 +105,8 @@ for i in range(12):
         names = tokenizer.decode(y.cpu().squeeze())
 	
 	# Obtiene los índices de los nombres
-        index_smith = names.index("He")
-        index_jones = names.index("She")
+        index_smith = names.index("Smith")
+        index_jones = names.index("Jones")
 
 	# Obtiene sus logits
         smith = out_np[0][index_smith]
